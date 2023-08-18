@@ -1,0 +1,21 @@
+CREATE OR  REPLACE TABLE stg_masterdata AS
+(select School_code,
+School_name,
+Street,
+Town_suburb,
+Postcode,
+latest_year_enrolment_FTE,
+Indigenous_pct,
+LBOTE_pct,
+ICSEA_value,
+Level_of_schooling,
+Selective_school,
+Opportunity_class,
+School_subtype,
+CAST(SUBSTRING("Date_1st_teacher", 1, 10) AS DATE) AS Date_1st_teacher,
+LGA,
+Latitude,
+Longitude,
+"Assets unit" Assets_unit,
+SA4
+from raw_masterdata);
