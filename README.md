@@ -117,24 +117,20 @@ The size of samples used for this analysis can be seen from the graph below:
 
 ## Further Exploration for Nuanced Insights
 
-Several unexamined factors could provide additional depth to the analysis:
+### Teacher Experience & Quality:
 
-1. **Student Demographics:** Variables like socio-economic background, ethnicity, and family structure might influence attendance and CompClass %. Exploring these aspects could yield more nuanced findings.
+Teachers' expertise and training can significantly impact classroom management, potentially affecting both attendance and CompClass %. Research suggests that teacher quality is a critical factor in determining student success (Hattie, 2003).
 
-2. **Teaching Methodologies:** Variation in teaching approaches across schools or regions could impact attendance and CompClass %. Accounting for teaching methodologies may provide a richer perspective.
+### Student Demographics:
 
-3. **School Policies:** School-specific policies to enhance attendance or classroom dynamics might affect correlations. Factoring in these policies could lead to a more comprehensive understanding.
+Various demographic variables such as socio-economic background, ethnicity, and family structure can exert an influence on attendance and CompClass %. Notably, in the context of Australian schools, the role of Aboriginal and Torres Strait Islander Students, particularly in remote areas, could be pivotal in understanding the composite class effect on attendance rate.
 
-4. **Parental Involvement:** Parental engagement is significant for both attendance and classroom behavior. Its influence, if considered, could contribute to a more holistic analysis.
+### School Resources:
 
-5. **Student Motivation:** Students' intrinsic motivations and attitudes toward attendance and participation could shed light on observed trends.
+The school environment and available resources play a crucial role in student attendance (Kearney, 2021). Disparities in resources and facilities among schools might contribute to variations in attendance and classroom dynamics.
 
-6. **External Factors:** Local events, culture, and economic conditions may play a role in attendance and classroom dynamics. Considering these external influences could provide contextual insights.
+### References:
 
-7. **Teacher Experience:** Teachers' expertise and training might impact classroom management, affecting attendance and CompClass %.
+- Hattie, J. (2003). Teachers make a difference: What is the research evidence? *2003 Research Conference of the Australian Council for Educational Research – Building teacher quality: What does the research tell us?* Melbourne: Australian Council for Educational Research.
 
-8. **Health and Well-being:** Students' physical and mental well-being can influence attendance and engagement, warranting consideration.
-
-9. **Parent-Teacher Communication:** Effective communication between parents and teachers might shape attendance and behavior, enhancing the analysis.
-
-10. **School Resources:** Disparities in resources and facilities between schools could underlie attendance and classroom dynamics variations. Accounting for this aspect could offer comprehensive insights.
+- Kearney, C. A. (2021). Integrating systemic and analytic approaches to school attendance problems: synergistic frameworks for research and policy directions. *Child and Youth Care Forum*, 50(6), 701-742. doi:10.1007/s10566-020-09591-0.
