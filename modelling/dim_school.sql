@@ -18,7 +18,9 @@ SELECT
     "Latitude"::FLOAT AS "Latitude",
     "Longitude"::FLOAT AS "Longitude",
     "Assets_unit",
-    "SA4"
+    "SA4",
+    ASGS_remoteness,
+    AECG_region
 FROM
     stg_masterdata;
 
