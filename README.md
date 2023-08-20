@@ -12,65 +12,89 @@ Please note that records with null ASGS_remoteness values (62 records) are exclu
 
 ## Hypothesis 1: Correlation between Attendance and CompClass %
 
-### Model Overview
+## Trend Lines Model
 
-- The linear trend model aims to predict the sum of CompClass % based on the sum of attendance.
-- The model formula incorporates the factor "Year," accounting for potential yearly variations.
-- Significance is evaluated at p <= 0.05.
+A linear trend model has been established to examine the relationship between the average of Attendance and the average of CompClass %. The model's significance is assessed at a p-value threshold of <= 0.05.
 
-### Model Visualization
+### Hypothesis:
 
-![Attendance vs CompClass](analysis/Ana_Attendasnce_VS_Compclass.png)
+**Hypothesis:** There is a significant correlation between attendance and the percentage of "CompClass %" (CompClass percentage) among the observed data.
 
-### Model Statistics
-![Attendance vs CompClass](analysis/TrendModel_Att_VS_Compclass.png)
+### Model Overview:
 
-- Number of Modeled Observations: 1641
-- Number of Filtered Observations: 518
-- Model Degrees of Freedom: 2
-- Residual Degrees of Freedom (DF): 1639
-- Sum Squared Error (SSE): 199.275
-- Mean Squared Error (MSE): 0.121583
-- R-Squared: 0.0667935
-- Standard Error: 0.348688
-- P-Value (Significance): < 0.0001
+- **Model formula:** (Avg. CompClass % + intercept)
+- **Modeled observations:** 13186
+- **Filtered observations:** 9771
+- **Model degrees of freedom:** 2
+- **Residual degrees of freedom (DF):** 13184
+- **SSE (sum squared error):** 185687
+- **MSE (mean squared error):** 14.0843
+- **R-Squared:** 0.0395164
+- **Standard error:** 3.7529
+- **p-value (significance):** < 0.0001
 
-### Analysis of Variance
+### Individual Trend Lines:
 
-- The factor "Year" has 0 degrees of freedom, suggesting potential insignificance.
-- Individual trend lines for "Attendance" indicate statistically significant impact on "CompClass %."
-- Coefficient for "Attendance": -0.0220295
-- Intercept value: 2.47066
+- The analysis focuses on the trend line depicting the correlation between Attendance and Avg. CompClass %.
+- For "Avg. CompClass %," the p-value is < 0.0001, implying a statistically significant impact on Attendance.
+- The coefficient for "Avg. CompClass %" is -2.1457, suggesting that for each unit increase in the average of CompClass %, Attendance decreases by this amount.
+- The intercept value is 93.1779, signifying the expected Attendance when the average of CompClass % is zero.
 
-## Hypothesis 2: Correlation between Attendance and ICSEA Value
+### Model Visualization:
 
-### Model Overview
+![Trend Model Visualization](analysis/Ana_Attendasnce_VS_Compclass.png)
 
-- Linear trend model investigates the relationship between average ICSEA value and average attendance.
-- Model formula includes average attendance and an intercept.
-- Significance assessed at p <= 0.05.
+### Interpretation:
 
-### Model Visualization
+- The R-Squared value of 0.0395164 denotes that approximately 3.95% of the variability in Attendance can be elucidated by the variation in the average of CompClass %.
+- The p-value of < 0.0001 provides robust evidence of a significant correlation between the average of CompClass % and Attendance.
+- The negative coefficient for "Avg. CompClass %" implies that as the average of CompClass % increases, Attendance tends to decrease.
 
-![Attendance vs CompClass](analysis/Ana_Attendance_VS_ICSEA.png)
+### Conclusion:
 
-### Model Statistics
-![Attendance vs CompClass](analysis/TrendModel_Att_VS_ICSEA.png)
+Based on this analysis, compelling statistical evidence supports a noteworthy correlation between the average of CompClass % and Attendance. Nevertheless, the relatively modest R-Squared value suggests that the model's ability to explain Attendance variance based on the average of CompClass % is limited. Delving into additional factors influencing this relationship might be prudent.
 
-- Number of Modeled Observations: 22264
-- Number of Filtered Observations: 693
-- Model Degrees of Freedom: 2
-- Residual Degrees of Freedom (DF): 22262
-- Sum Squared Error (SSE): 1.57873e+08
-- Mean Squared Error (MSE): 7091.61
-- R-Squared: 0.214277
-- Standard Error: 84.2117
-- P-Value (Significance): < 0.0001
+## Hypothesis 2: Correlation between Attendance and ICSEA %
 
-### Interpretation
+A linear trend model has been established to examine the relationship between the average of Attendance and the average of ICSEA value. The model's significance is assessed at a p-value threshold of <= 0.05.
 
-- Strong evidence of significant correlation between attendance and ICSEA value.
-- Positive coefficient for "Avg. Attendance": 8.96531
+### Hypothesis:
+
+**Hypothesis:** There is a significant correlation between attendance and the ICSEA (the Index of Community Socio-Educational Advantage) among the observed data.
+
+### Model Overview:
+
+- **Model formula:** (Avg. ICSEA value + intercept)
+- **Modeled observations:** 22264
+- **Filtered observations:** 693
+- **Model degrees of freedom:** 2
+- **Residual degrees of freedom (DF):** 22262
+- **SSE (sum squared error):** 420876
+- **MSE (mean squared error):** 18.9056
+- **R-Squared:** 0.214277
+- **Standard error:** 4.34805
+- **p-value (significance):** < 0.0001
+
+### Individual Trend Lines:
+
+- The analysis focuses on the trend line depicting the correlation between Attendance and Avg. ICSEA value.
+- For "Avg. ICSEA value," the p-value is < 0.0001, indicating a statistically significant impact on Attendance.
+- The coefficient for "Avg. ICSEA value" is 0.0239007, suggesting that for each unit increase in the average of ICSEA value, Attendance increases by this amount.
+- The intercept value is 67.9207, signifying the expected Attendance when the average of ICSEA value is zero.
+
+### Model Visualization:
+
+![Trend Model Visualization](analysis/Ana_Attendance_VS_ICSEA.png)
+
+### Interpretation:
+
+- The R-Squared value of 0.214277 indicates that around 21.43% of the variability in Attendance can be explained by the variation in the average of ICSEA value.
+- The p-value of < 0.0001 provides strong evidence of a significant correlation between the average of ICSEA value and Attendance.
+- The positive coefficient for "Avg. ICSEA value" implies that as the average of ICSEA value increases, Attendance tends to increase.
+
+### Conclusion:
+
+Based on this analysis, compelling statistical evidence supports a significant correlation between the average of ICSEA value and Attendance. The relatively high R-Squared value suggests that the model can explain a notable portion of Attendance variance based on the average of ICSEA value. Nevertheless, additional factors influencing this relationship might warrant further investigation.
 
 ## Extra Findings
 
@@ -79,7 +103,13 @@ I hypothesized that varying levels of school remoteness might influence the corr
 Specifically, within Inner Regional Australia and Major Cities of Australia schools, an inverse coefficient is observed between attendance and compclass%. Conversely, in schools situated in Outer Regional Australia, Remote Australia, and Very Remote Australia, a positive coefficient exists between attendance and compclass%.
 
 It's noteworthy that the R-squared values, indicating the extent to which the model explains the relationship, are relatively modest in Inner Regional Australia and Outer Regional Australia. In comparison, they show a more moderate explanatory capacity in Major Cities of Australia, Remote Australia, and Very Remote Australia.
-![Attendance VS Compclass by Remoteness](analysis/Ana_Attendance_VS_Compclass_byRemoteness.png)
+![Attendance VS Compclass by Remoteness](analysis/Ana_Attendance_VS_ICSEA_byRemoteness.png)
+
+### Sample Size:
+
+The size of samples used for this analysis can be seen from the graph below:
+
+![Sample Size Visualization](analysis/sample_size.png)
 
 ### Note
 
